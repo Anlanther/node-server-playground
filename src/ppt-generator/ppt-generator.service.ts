@@ -1,50 +1,83 @@
 import { Injectable } from '@nestjs/common';
 import * as path from 'path';
 import Automizer, { ISlide, modify } from 'pptx-automizer';
-import { MOCK_FUND_DATA } from './dummy-data/fund-data.mock';
 import { FundData, FundDataForKey } from './models/fund-data.model';
 
 @Injectable()
 export class PptGeneratorService {
-  async generateSlides(): Promise<NodeJS.ReadableStream> {
+  async generateSlides(funds: FundData[]): Promise<NodeJS.ReadableStream> {
     const templateDir = path.join(
       process.cwd(),
       'src',
       'ppt-generator',
       'pptx-templates',
     );
-    const outputDir = path.join(process.cwd(), 'output');
     const titlePath = path.join(templateDir, 'Title.pptx');
     const summaryPath = path.join(templateDir, 'Summary.pptx');
+    const strategyPath = path.join(templateDir, 'Strategy.pptx');
 
     const automizer = new Automizer({
       templateDir,
-      outputDir,
       useCreationIds: false,
       autoImportSlideMasters: true,
-      removeExistingSlides: false,
+      removeExistingSlides: true,
       compression: 0,
       verbosity: 1,
       cleanupPlaceholders: false,
     });
 
-    const pres = automizer.loadRoot(titlePath).load(summaryPath, 'summary');
+    const pres = automizer
+      .loadRoot(titlePath)
+      .load(titlePath, 'title')
+      .load(strategyPath, 'strategy')
+      .load(summaryPath, 'summary');
 
-    return await this.generateSummary(pres, MOCK_FUND_DATA);
+    this.generateTitle(pres, 1, funds[0]);
+
+    funds.forEach((fundData) => {
+      this.generateSummary(pres, 1, fundData);
+      this.generateStrategy(pres, 1, fundData);
+    });
+
+    return pres.stream();
   }
 
-  async generateSummary(
+  generateSummary(
     pres: Automizer,
+    index: number,
     fundData: FundData,
-  ): Promise<NodeJS.ReadableStream> {
+  ): Automizer {
+    return pres.addSlide('summary', index, this.getSlideCallback(fundData));
+  }
+
+  generateTitle(pres: Automizer, index: number, fundData: FundData): Automizer {
+    return pres.addSlide('title', index, this.getSlideCallback(fundData));
+  }
+
+  generateStrategy(
+    pres: Automizer,
+    index: number,
+    fundData: FundData,
+  ): Automizer {
+    return pres.addSlide('strategy', index, this.getSlideCallback(fundData));
+  }
+
+  private getSlideCallback(fundData: FundData) {
     const slideCallback = (slide: ISlide) => {
       slide
         .getAllElements()
         .then((elements) => {
+          const updatedFundDetail = this.prepareFundData(fundData);
+          console.log('Replacement data:', updatedFundDetail);
           elements.forEach((element) => {
             if (element) {
+              console.log(
+                'Element name:',
+                element.name,
+                'Text:',
+                element.getText(),
+              );
               try {
-                const updatedFundDetail = this.prepareFundData(fundData);
                 slide.modifyElement(element.name, [
                   modify.replaceText([
                     ...Object.keys(updatedFundDetail).map((key) => ({
@@ -67,9 +100,7 @@ export class PptGeneratorService {
           throw new Error(`Error: ${err}`);
         });
     };
-    pres.addSlide('summary', 1, slideCallback);
-
-    return pres.stream();
+    return slideCallback;
   }
 
   private prepareFundData(fundData: FundData): FundDataForKey {
@@ -107,38 +138,3 @@ export class PptGeneratorService {
     return updatedFundDetail;
   }
 }
-
-// // First, let's set some preferences!
-// pres.addSlide('Summary.pptx', 2, (slide) => {
-//   slide.modifyElement();
-// });
-
-// // Get useful information about loaded templates:
-// /*
-// const presInfo = await pres.getInfo();
-// const mySlides = presInfo.slidesByTemplate('shapes');
-// const mySlide = presInfo.slideByNumber('shapes', 2);
-// const myShape = presInfo.elementByName('shapes', 2, 'Cloud');
-// */
-
-// // addSlide takes two arguments: The first will specify the source
-// // presentation's label to get the template from, the second will set the
-// // slide number to require.
-// pres
-//   .addSlide('graph', 1)
-//   .addSlide('shapes', 1)
-//   .addSlide('SlideWithImages.pptx', 2);
-
-// // Finally, we want to write the output file.
-// pres.write('strategy-pop.pptx').then((summary) => {
-//   console.log(summary);
-// });
-
-// // You can e.g. output the pptx archive to stdout instead of writing a file:
-// stream.pipe(process.stdout);
-
-// // If you need any other output format, you can eventually access
-// // the underlying JSZip instance:
-// const finalJSZip = await pres.getJSZip();
-// // Convert the output to whatever needed:
-// const base64 = await finalJSZip.generateAsync({ type: 'base64' });
