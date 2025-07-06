@@ -1,0 +1,157 @@
+{
+  "name": "Playground",
+  "version": "1",
+  "items": [
+    {
+      "type": "folder",
+      "name": "PPT Generator",
+      "filename": "PPT Generator",
+      "seq": 2,
+      "root": {
+        "meta": {
+          "name": "PPT Generator",
+          "seq": 2
+        }
+      },
+      "items": [
+        {
+          "type": "http",
+          "name": "All Funds",
+          "filename": "All Funds.bru",
+          "seq": 1,
+          "request": {
+            "url": "{{api}}/{{ppt-generator}}",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Fund 1",
+          "filename": "Fund 1.bru",
+          "seq": 2,
+          "request": {
+            "url": "{{api}}/{{ppt-generator}}/1",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Fund 2,3",
+          "filename": "Fund 2,3.bru",
+          "seq": 4,
+          "request": {
+            "url": "{{api}}/{{ppt-generator}}/2-3",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Fund 2",
+          "filename": "Fund 2.bru",
+          "seq": 3,
+          "request": {
+            "url": "{{api}}/{{ppt-generator}}/2",
+            "method": "GET",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "none",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "activeEnvironmentUid": "mlEViJRA6kLFkqhtXbmWp",
+  "environments": [
+    {
+      "variables": [
+        {
+          "name": "api",
+          "value": "http://localhost:3000",
+          "enabled": true,
+          "secret": false,
+          "type": "text"
+        },
+        {
+          "name": "ppt-generator",
+          "value": "ppt-generator",
+          "enabled": true,
+          "secret": false,
+          "type": "text"
+        }
+      ],
+      "name": "local"
+    }
+  ],
+  "brunoConfig": {
+    "version": "1",
+    "name": "Playground",
+    "type": "collection",
+    "ignore": [
+      "node_modules",
+      ".git"
+    ],
+    "size": 0.00058746337890625,
+    "filesCount": 6
+  }
+}
