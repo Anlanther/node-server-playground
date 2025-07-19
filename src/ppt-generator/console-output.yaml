@@ -1,0 +1,285 @@
+Replacement data: {
+  date: '2023-10-01',
+  fundName: 'Global Equity Fund',
+  investmentApproach: 'Long-term growth with a focus on technology stocks.',
+  overview: 'The fund invests in global equities with a focus on innovation.',
+  noStocks: '50',
+  stockLimit: '10%',
+  sectorLimit: '20%',
+  countryLimit: '30%',
+  riskActiveMoney: '5%',
+  riskTrackError: '2%',
+  minMarketCap: '$1B',
+  turnover: '30%',
+  cash: '5%',
+  morningstarStyle: 'Growth',
+  launchDate: '2010-01-01',
+  comparativeIndex: 'MSCI World Index',
+  sector: 'Technology',
+  fundStructure: 'Open-ended',
+  fundSize: '$500M',
+  ocf: '1.5%',
+  isin: 'US1234567890',
+  sendol: 'USD',
+  fundPerformance: '\n' +
+    '• 15% annualized return over the last five years.\n' +
+    '        • Consistently outperformed its benchmark, delivering strong results even during periods of market volatility.\n' +
+    '        • Disciplined investment process and focus on high-quality, innovative companies have contributed to robust returns.\n' +
+    '        • Diversified across multiple sectors and geographies, helping to mitigate risk and enhance performance.\n' +
+    '        • Active management approach allows quick response to changing market conditions and capitalize on emerging opportunities.\n' +
+    '        • Demonstrated resilience and adaptability over the past decade, making it a compelling choice for long-term investors seeking growth.\n' +
+    '    ',
+  fundPositioning: '\n' +
+    '• Positioned to capitalize on emerging technology trends.\n' +
+    '        • Maintains a forward-looking investment strategy, targeting companies at the forefront of innovation (AI, cloud computing, digital transformation).\n' +
+    '        • Portfolio managers conduct rigorous fundamental analysis to identify businesses with sustainable competitive advantages and strong growth prospects.\n' +
+    '        • Balanced allocation across established leaders and promising up-and-comers for both stability and potential upside.\n' +
+    '        • Considers environmental, social, and governance (ESG) factors in investment decisions.\n' +
+    '        • Aims to deliver superior risk-adjusted returns over the long term.\n' +
+    '    ',
+  portfolioManager1: 'Alice Smith\nLead Portfolio Manager',
+  portfolioManager2: 'Bob Johnson\nCo-Portfolio Manager'
+}
+Element name: Google Shape;54;p13 Text: [ '{{fundName}}' ]
+Element name: Google Shape;55;p13 Text: [ 'Strategy Overview' ]
+Element name: Google Shape;56;p13 Text: [ '{{', 'icon', '1}}' ]
+Element name: Google Shape;57;p13 Text: [ 'Portfolio Manager(s)' ]
+Element name: Google Shape;58;p13 Text: [ 'Typical Portfolio Characteristics' ]
+Element name: Google Shape;59;p13 Text: [ 'Investment', ' Approach' ]
+Element name: Google Shape;60;p13 Text: [ 'Overview' ]
+Element name: Google Shape;61;p13 Text: [ 'Fund Basics' ]
+Element name: Google Shape;62;p13 Text: [ '{{portfolioManager1}}' ]
+Element name: Google Shape;63;p13 Text: [ '{{investmentApproach}}' ]
+Element name: Google Shape;64;p13 Text: [ '{{overviewt}}' ]
+Element name: Google Shape;65;p13 Text: [ 'Number of stocks' ]
+Element name: Google Shape;66;p13 Text: [ 'Stock limit' ]
+Element name: Google Shape;67;p13 Text: [ 'Sector limit' ]
+Element name: Google Shape;68;p13 Text: [ 'Country limit' ]
+Element name: Google Shape;69;p13 Text: [ 'Risk – Active Money' ]
+Element name: Google Shape;70;p13 Text: [ 'Risk – Track Error' ]
+Element name: Google Shape;71;p13 Text: [ 'Minimum Market Cap' ]
+Element name: Google Shape;72;p13 Text: [ 'Turnover' ]
+Element name: Google Shape;73;p13 Text: [ 'Cash' ]
+Element name: Google Shape;74;p13 Text: [ 'Morningstar Style' ]
+Element name: Google Shape;75;p13 Text: [ '{{', 'icon', '2}}' ]
+Element name: Google Shape;76;p13 Text: [ '{{', 'icon', '3}}' ]
+Element name: Google Shape;77;p13 Text: [ '{{', 'icon', '5}}' ]
+Element name: Google Shape;78;p13 Text: [ '{{', 'icon', '4}}' ]
+Element name: Google Shape;79;p13 Text: [ 'Launch Date' ]
+Element name: Google Shape;80;p13 Text: [ 'Comparative index' ]
+Element name: Google Shape;81;p13 Text: [ 'Sector' ]
+Element name: Google Shape;82;p13 Text: [ 'Fund structure' ]
+Element name: Google Shape;83;p13 Text: [ 'Fund size' ]
+Element name: Google Shape;84;p13 Text: [ 'OCF' ]
+Element name: Google Shape;85;p13 Text: [ 'ISIN' ]
+Element name: Google Shape;86;p13 Text: [ 'SENDOL' ]
+Element name: Google Shape;87;p13 Text: [ '{{noStocks}}' ]
+Element name: Google Shape;88;p13 Text: [ '{{stockLimit}}' ]
+Element name: Google Shape;89;p13 Text: [ '{{sectorLimit}}' ]
+Element name: Google Shape;90;p13 Text: [ '{{countryLimit}}' ]
+Element name: Google Shape;91;p13 Text: [ '{{riskActiveMoney}}' ]
+Element name: Google Shape;92;p13 Text: [ '{{riskTrackError}}' ]
+Element name: Google Shape;93;p13 Text: [ '{{minMarketCap}}' ]
+Element name: Google Shape;94;p13 Text: [ '{{turnover}}' ]
+Element name: Google Shape;95;p13 Text: [ '{{c', 'ash}}' ]
+Element name: Google Shape;96;p13 Text: [ '{{morningstarStyle}}' ]
+Element name: Google Shape;97;p13 Text: [ '{{launchDate}}' ]
+Element name: Google Shape;98;p13 Text: [ '{{c', 'omparativeIndex}}' ]
+Element name: Google Shape;99;p13 Text: [ '{{s', 'ector}}' ]
+Element name: Google Shape;100;p13 Text: [ '{{f', 'undStructure}}' ]
+Element name: Google Shape;101;p13 Text: [ '{{fundSize}}' ]
+Element name: Google Shape;102;p13 Text: [ '{{ocf', '}}' ]
+Element name: Google Shape;103;p13 Text: [ '{{isin}}' ]
+Element name: Google Shape;104;p13 Text: [ '{{sendol}}' ]
+Element name: Google Shape;105;p13 Text: [ '{{pm1}}' ]
+Element name: Google Shape;106;p13 Text: [ '{{portfolioManager2}}' ]
+Element name: Google Shape;107;p13 Text: [ '{{pm2}}' ]
+Replacement data: {
+  date: '2023-10-01',
+  fundName: 'Global Equity Fund',
+  investmentApproach: 'Long-term growth with a focus on technology stocks.',
+  overview: 'The fund invests in global equities with a focus on innovation.',
+  noStocks: '50',
+  stockLimit: '10%',
+  sectorLimit: '20%',
+  countryLimit: '30%',
+  riskActiveMoney: '5%',
+  riskTrackError: '2%',
+  minMarketCap: '$1B',
+  turnover: '30%',
+  cash: '5%',
+  morningstarStyle: 'Growth',
+  launchDate: '2010-01-01',
+  comparativeIndex: 'MSCI World Index',
+  sector: 'Technology',
+  fundStructure: 'Open-ended',
+  fundSize: '$500M',
+  ocf: '1.5%',
+  isin: 'US1234567890',
+  sendol: 'USD',
+  fundPerformance: '\n' +
+    '• 15% annualized return over the last five years.\n' +
+    '        • Consistently outperformed its benchmark, delivering strong results even during periods of market volatility.\n' +
+    '        • Disciplined investment process and focus on high-quality, innovative companies have contributed to robust returns.\n' +
+    '        • Diversified across multiple sectors and geographies, helping to mitigate risk and enhance performance.\n' +
+    '        • Active management approach allows quick response to changing market conditions and capitalize on emerging opportunities.\n' +
+    '        • Demonstrated resilience and adaptability over the past decade, making it a compelling choice for long-term investors seeking growth.\n' +
+    '    ',
+  fundPositioning: '\n' +
+    '• Positioned to capitalize on emerging technology trends.\n' +
+    '        • Maintains a forward-looking investment strategy, targeting companies at the forefront of innovation (AI, cloud computing, digital transformation).\n' +
+    '        • Portfolio managers conduct rigorous fundamental analysis to identify businesses with sustainable competitive advantages and strong growth prospects.\n' +
+    '        • Balanced allocation across established leaders and promising up-and-comers for both stability and potential upside.\n' +
+    '        • Considers environmental, social, and governance (ESG) factors in investment decisions.\n' +
+    '        • Aims to deliver superior risk-adjusted returns over the long term.\n' +
+    '    ',
+  portfolioManager1: 'Alice Smith\nLead Portfolio Manager',
+  portfolioManager2: 'Bob Johnson\nCo-Portfolio Manager'
+}
+Element name: Google Shape;54;p13 Text: [ '' ]
+Element name: Google Shape;55;p13 Text: [ 'Centralised Buy List and Focus Funds' ]
+Element name: Google Shape;56;p13 Text: [ '{{date}}' ]
+Replacement data: {
+  date: '2023-10-01',
+  fundName: 'Global Equity Fund',
+  investmentApproach: 'Long-term growth with a focus on technology stocks.',
+  overview: 'The fund invests in global equities with a focus on innovation.',
+  noStocks: '50',
+  stockLimit: '10%',
+  sectorLimit: '20%',
+  countryLimit: '30%',
+  riskActiveMoney: '5%',
+  riskTrackError: '2%',
+  minMarketCap: '$1B',
+  turnover: '30%',
+  cash: '5%',
+  morningstarStyle: 'Growth',
+  launchDate: '2010-01-01',
+  comparativeIndex: 'MSCI World Index',
+  sector: 'Technology',
+  fundStructure: 'Open-ended',
+  fundSize: '$500M',
+  ocf: '1.5%',
+  isin: 'US1234567890',
+  sendol: 'USD',
+  fundPerformance: '\n' +
+    '• 15% annualized return over the last five years.\n' +
+    '        • Consistently outperformed its benchmark, delivering strong results even during periods of market volatility.\n' +
+    '        • Disciplined investment process and focus on high-quality, innovative companies have contributed to robust returns.\n' +
+    '        • Diversified across multiple sectors and geographies, helping to mitigate risk and enhance performance.\n' +
+    '        • Active management approach allows quick response to changing market conditions and capitalize on emerging opportunities.\n' +
+    '        • Demonstrated resilience and adaptability over the past decade, making it a compelling choice for long-term investors seeking growth.\n' +
+    '    ',
+  fundPositioning: '\n' +
+    '• Positioned to capitalize on emerging technology trends.\n' +
+    '        • Maintains a forward-looking investment strategy, targeting companies at the forefront of innovation (AI, cloud computing, digital transformation).\n' +
+    '        • Portfolio managers conduct rigorous fundamental analysis to identify businesses with sustainable competitive advantages and strong growth prospects.\n' +
+    '        • Balanced allocation across established leaders and promising up-and-comers for both stability and potential upside.\n' +
+    '        • Considers environmental, social, and governance (ESG) factors in investment decisions.\n' +
+    '        • Aims to deliver superior risk-adjusted returns over the long term.\n' +
+    '    ',
+  portfolioManager1: 'Alice Smith\nLead Portfolio Manager',
+  portfolioManager2: 'Bob Johnson\nCo-Portfolio Manager'
+}
+Element name: Google Shape;54;p13 Text: [ '{{fundName}}' ]
+Element name: Google Shape;55;p13 Text: [ 'Quarterly Performance & Positioning Review' ]
+Element name: Google Shape;56;p13 Text: [ '{{fundPerformance}}' ]
+Element name: Google Shape;57;p13 Text: [ 'Fund Performance' ]
+Element name: Google Shape;58;p13 Text: [ 'Fund Positioning' ]
+Element name: Google Shape;59;p13 Text: [ '{{fundPositioning}}' ]
+Replacement data: {
+  date: '2023-10-01',
+  fundName: 'Global Equity Fund',
+  investmentApproach: 'Long-term growth with a focus on technology stocks.',
+  overview: 'The fund invests in global equities with a focus on innovation.',
+  noStocks: '50',
+  stockLimit: '10%',
+  sectorLimit: '20%',
+  countryLimit: '30%',
+  riskActiveMoney: '5%',
+  riskTrackError: '2%',
+  minMarketCap: '$1B',
+  turnover: '30%',
+  cash: '5%',
+  morningstarStyle: 'Growth',
+  launchDate: '2010-01-01',
+  comparativeIndex: 'MSCI World Index',
+  sector: 'Technology',
+  fundStructure: 'Open-ended',
+  fundSize: '$500M',
+  ocf: '1.5%',
+  isin: 'US1234567890',
+  sendol: 'USD',
+  fundPerformance: '\n' +
+    '• 15% annualized return over the last five years.\n' +
+    '        • Consistently outperformed its benchmark, delivering strong results even during periods of market volatility.\n' +
+    '        • Disciplined investment process and focus on high-quality, innovative companies have contributed to robust returns.\n' +
+    '        • Diversified across multiple sectors and geographies, helping to mitigate risk and enhance performance.\n' +
+    '        • Active management approach allows quick response to changing market conditions and capitalize on emerging opportunities.\n' +
+    '        • Demonstrated resilience and adaptability over the past decade, making it a compelling choice for long-term investors seeking growth.\n' +
+    '    ',
+  fundPositioning: '\n' +
+    '• Positioned to capitalize on emerging technology trends.\n' +
+    '        • Maintains a forward-looking investment strategy, targeting companies at the forefront of innovation (AI, cloud computing, digital transformation).\n' +
+    '        • Portfolio managers conduct rigorous fundamental analysis to identify businesses with sustainable competitive advantages and strong growth prospects.\n' +
+    '        • Balanced allocation across established leaders and promising up-and-comers for both stability and potential upside.\n' +
+    '        • Considers environmental, social, and governance (ESG) factors in investment decisions.\n' +
+    '        • Aims to deliver superior risk-adjusted returns over the long term.\n' +
+    '    ',
+  portfolioManager1: 'Alice Smith\nLead Portfolio Manager',
+  portfolioManager2: 'Bob Johnson\nCo-Portfolio Manager'
+}
+Element name: Google Shape;54;p13 Text: [ '{{fundName}}' ]
+Element name: Google Shape;55;p13 Text: [ 'Strategy Overview' ]
+Element name: Google Shape;56;p13 Text: [ '{{icon1}}' ]
+Element name: Google Shape;57;p13 Text: [ 'Portfolio Manager(s)' ]
+Element name: Google Shape;58;p13 Text: [ 'Typical Portfolio Characteristics' ]
+Element name: Google Shape;59;p13 Text: [ 'Investment', ' Approach' ]
+Element name: Google Shape;60;p13 Text: [ 'Overview' ]
+Element name: Google Shape;61;p13 Text: [ 'Fund Basics' ]
+Element name: Google Shape;62;p13 Text: [ '{{portfolioManager1}}' ]
+Element name: Google Shape;63;p13 Text: [ '{{investmentApproach}}' ]
+Element name: Google Shape;64;p13 Text: [ '{{overview}}' ]
+Element name: Google Shape;65;p13 Text: [ 'Number of stocks' ]
+Element name: Google Shape;66;p13 Text: [ 'Stock limit' ]
+Element name: Google Shape;67;p13 Text: [ 'Sector limit' ]
+Element name: Google Shape;68;p13 Text: [ 'Country limit' ]
+Element name: Google Shape;69;p13 Text: [ 'Risk – Active Money' ]
+Element name: Google Shape;70;p13 Text: [ 'Risk – Track Error' ]
+Element name: Google Shape;71;p13 Text: [ 'Minimum Market Cap' ]
+Element name: Google Shape;72;p13 Text: [ 'Turnover' ]
+Element name: Google Shape;73;p13 Text: [ 'Cash' ]
+Element name: Google Shape;74;p13 Text: [ 'Morningstar Style' ]
+Element name: Google Shape;75;p13 Text: [ '{{', 'icon', '2}}' ]
+Element name: Google Shape;76;p13 Text: [ '{{', 'icon', '3}}' ]
+Element name: Google Shape;77;p13 Text: [ '{{', 'icon', '5}}' ]
+Element name: Google Shape;78;p13 Text: [ '{{', 'icon', '4}}' ]
+Element name: Google Shape;79;p13 Text: [ 'Launch Date' ]
+Element name: Google Shape;80;p13 Text: [ 'Comparative index' ]
+Element name: Google Shape;81;p13 Text: [ 'Sector' ]
+Element name: Google Shape;82;p13 Text: [ 'Fund structure' ]
+Element name: Google Shape;83;p13 Text: [ 'Fund size' ]
+Element name: Google Shape;84;p13 Text: [ 'OCF' ]
+Element name: Google Shape;85;p13 Text: [ 'ISIN' ]
+Element name: Google Shape;86;p13 Text: [ 'SENDOL' ]
+Element name: Google Shape;87;p13 Text: [ '{{noStocks}}' ]
+Element name: Google Shape;88;p13 Text: [ '{{stockLimit}}' ]
+Element name: Google Shape;89;p13 Text: [ '{{sectorLimit}}' ]
+Element name: Google Shape;90;p13 Text: [ '{{countryLimit}}' ]
+Element name: Google Shape;91;p13 Text: [ '{{riskActiveMoney}}' ]
+Element name: Google Shape;92;p13 Text: [ '{{riskTrackError}}' ]
+Element name: Google Shape;93;p13 Text: [ '{{minMarketCap}}' ]
+Element name: Google Shape;94;p13 Text: [ '{{turnover}}' ]
+Element name: Google Shape;95;p13 Text: [ '{{cash}}' ]
+Element name: Google Shape;96;p13 Text: [ '{{morningstarStyle}}' ]
+Element name: Google Shape;97;p13 Text: [ '{{launchDate}}' ]
+Element name: Google Shape;98;p13 Text: [ '{{comparativeIndex}}' ]
+Element name: Google Shape;99;p13 Text: [ '{{sector}}' ]
+Element name: Google Shape;100;p13 Text: [ '{{fundStructure}}' ]
+Element name: Google Shape;101;p13 Text: [ '{{fundSize}}' ]
+Element name: Google Shape;102;p13 Text: [ '{{ocf', '}}' ]
+Element name: Google Shape;103;p13 Text: [ '{{isin}}' ]
+Element name: Google Shape;104;p13 Text: [ '{{sendol}}' ]
+Element name: Google Shape;105;p13 Text: [ '{{pm1}}' ]
+Element name: Google Shape;106;p13 Text: [ '{{portfolioManager2}}' ]
+Element name: Google Shape;107;p13 Text: [ '{{pm2}}' ]
